@@ -26,20 +26,29 @@ body {
 }
 
 .pomodoro {
-  background: #fff;
+  background: #75e289;
   margin: 50px 20px;
   padding: 20px;
   border-radius: 6px;
+  font-weight: bold;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  color: #fff;
+}
+
+.working .pomodoro {
+  background: #ee766c;
+  color: #000;
 }
 
 .pomodoro h2 {
   font-size: 24px;
   text-align: center;
+  font-weight: bold;
 }
 .pomodoro .timer {
   font-size: 6rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .pomodoro .controls {
@@ -51,16 +60,19 @@ body {
 .pomodoro button {
   background: #60ee7a;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
   padding: 10px 25px;
-  color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   transition: background-color 300ms ease-in-out;
   margin: 20px auto;
 }
 
 .working .pomodoro button {
   background: #ef5d50;
-  color: #fff;
+  color: #000;
 }
 
 .pomodoro .details {
