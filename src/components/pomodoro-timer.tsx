@@ -45,6 +45,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
         setResting(false);
         setMainTime(props.pomodoroTime);
         audioStartWorking.play()
+        
     }, [
         setTimeCounting, 
         setWorking, 
@@ -111,7 +112,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
             <div className="controls">
                 <Button text="Work" onClick={() => configureWork()}></Button>
                 <Button text="Rest" onClick={() => configureRest(false)}></Button>
-                <Button 
+                <Button          
                     className={!working && !resting ? 'hidden' : ''}
                     text={timeCounting ? 'Pause' : 'Play'}
                     onClick={() => setTimeCounting(!timeCounting)}

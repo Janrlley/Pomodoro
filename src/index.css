@@ -13,12 +13,13 @@ body {
 }
 
 .container {
-  max-width: 640px;
+  max-width: 580px;
   margin: 0 auto;
 }
 
 .working {
   background: #ef5d50;
+  transition: background-color 300ms ease-in-out;
 }
 
 .hidden {
@@ -31,13 +32,14 @@ body {
   padding: 20px;
   border-radius: 6px;
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: background-color 300ms ease-in-out;
   color: #fff;
 }
 
 .working .pomodoro {
   background: #ee766c;
-  color: #000;
+  color: #fff;
 }
 
 .pomodoro h2 {
@@ -58,12 +60,12 @@ body {
 }
 
 .pomodoro button {
-  background: #60ee7a;
+  background: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   padding: 10px 25px;
-  color: #fff;
+  color: #75e289;
   font-size: 18px;
   font-weight: bold;
   transition: background-color 300ms ease-in-out;
@@ -71,8 +73,8 @@ body {
 }
 
 .working .pomodoro button {
-  background: #ef5d50;
-  color: #000;
+  background: #fff;
+  color: #ef5d50;
 }
 
 .pomodoro .details {
